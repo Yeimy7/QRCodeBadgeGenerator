@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/253385104e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js"></script>
+    <script type="text/javascript" src="qrcode.js"></script>
+
+    <title>QRCode Badge Generator</title>
+  </head>
+  <body lang="en">
+    <div class="container">
+      <form class="profile" id="profile">
+        <header class="title">
+          <div class="icon login"></div>
+          <h1>Assistant Data</h1>
+        </header>
+        <div class="data">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder=" Name"/>
+          <span class="message">Please enter your name</span>
+        </div>
+        <div class="data">
+          <label for="lastname">LastName</label>
+          <input type="text" id="lastname" placeholder=" Last Name"/>
+          <span class="message">Please enter your last name</span>
+        </div>
+        <div class="data">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder=" Email"/>
+          <span class="message">Please enter a valid email</span>
+        </div>
+        <div class="data">
+          <label for="twitter">Twitter</label>
+          <input type="text" id="twitter" placeholder=" Twitter" />
+          <span class="message">Please enter a valid twitter user</span>
+        </div>
+        <div class="data">
+          <label for="github">GitHub</label>
+          <input type="text" id="github" placeholder=" GitHub" />
+          <span class="message"></span>
+        </div>
+        <div class="data buttons">
+          <button id="generate">Generate</button>
+          <button id="cancel">Cancel</button>
+        </div>
+      </form>
+      <div class="profile">
+        <header class="title">
+          <div class="icon code"></div>
+          <h1>QRCode</h1>
+        </header>
+        <div class="code_qr">
+            <div id="placeHolder">Enter data to generate QR</div>
+        </div>
+        <div id="badge">
+          <p><b>Name:</b> None</p>
+          <p><b>LastName:</b> None</p>
+          <p><b>Email:</b> None</p>
+          <p><b>Twitter:</b> None</p>
+          <p><b>GitHub:</b> None</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
